@@ -1,0 +1,34 @@
+#application {
+    width: 240px !important;
+    position: fixed;
+    height: 100vh;
+    background: #fff5ec;
+    z-index: 100;
+}
+@media (max-width: 900px) {
+    #application {
+        transform: translateY(0px);
+    }
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E1E1E1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
