@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(main.css);
 /**
 Dashboard UI
  */
@@ -8,6 +9,7 @@ Dashboard UI
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
   --blue: #467fcf;
   --indigo: #6574cd;
@@ -41,6 +43,16 @@ Dashboard UI
   --font-family-monospace: Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
 *,
 *::before,
 *::after {
@@ -17428,6 +17440,8 @@ svg {
   border-radius: 0 0 3px 3px;
   height: auto;
   padding: 0;
+  border-color: #467fcf;
+  box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.25);
 }
 
 .selectize-dropdown [data-selectable] {

@@ -372,12 +372,12 @@ nav.side-navbar a {
 }
 
 nav.side-navbar a[data-toggle="collapse"]::before {
-    content: '\f104';
+    content: "\e930";
     display: inline-block;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: 'FontAwesome';
     position: absolute;
+    font-family: 'feather' !important;
     top: 50%;
     right: 20px
 }
@@ -496,7 +496,7 @@ nav.side-navbar.shrinked ul li a {
 }
 
 nav.side-navbar.shrinked ul li a[data-toggle="collapse"]::before {
-    content: '\f107';
+    content: "\e930";
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     position: absolute;
@@ -564,7 +564,7 @@ nav.side-navbar.shrinked .sidebar-header .title {
     }
 
     nav.side-navbar ul li a[data-toggle="collapse"]::before {
-        content: '\f107';
+        content: "\e930";
         -webkit-transform: translateX(50%);
         transform: translateX(50%);
         position: absolute;
@@ -782,9 +782,9 @@ nav.navbar .search-box form input {
 
 nav.navbar .dropdown-toggle::after {
     border: none !important;
-    content: '\f107';
+    content: "\e930";
     vertical-align: baseline;
-    font-family: 'FontAwesome';
+    font-family: 'feather' !important;
     margin-left: .3rem
 }
 
@@ -1631,7 +1631,7 @@ button, input[type='submit'] {
     line-height: 12px;
     text-align: center;
     display: block;
-    font-family: 'FontAwesome';
+    font-family: 'feather' !important;
     position: absolute;
     top: 1px;
     left: 1px;
